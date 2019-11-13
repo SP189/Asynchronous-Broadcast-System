@@ -2,8 +2,8 @@
 Objective :  To implement asynchronous broadcast model.
 
 Group members : 
-Shreya Patel - 2017130049,
-Vruchika Patil - 2017230079,
+Shreya Patel - 2016130049,
+Vruchika Patil - 2016230079,
 Priyanka Rokade - 2016130057
 
 Asynchronous broadcast communication model has a client server architecture. In this asynchronous broadcast communication model, all members can receive the messages sent to a group of participants at the time the message was sent. The sender is not blocked until everyone in the group receives the message. It is unblocked as soon as it receives an acknowledgement from the coordinator. If a participant goes offline, then upon reconnection, it will receive messages that were sent when it was offline. The messages sent after threshold time will be permanently lost to the participant. The coordinator manages the group, handles all communication and stores messages for persistence.
@@ -19,6 +19,8 @@ Message Send - Send messages to all current members.
 At the Coordinator side :
 The coordinator manages the group, handles all communication and stores messages. Participants join the group through register command. When the coordinator gets a message it performs the requested action. 
 
+
+![alt text](https://github.com/SP189/Asynchronous-Broadcast-System/blob/master/Asynchronous%20Broadcast%20System.jpg)
 ![alt text](https://github.com/SP189/Asynchronous-Broadcast-System/blob/master/Asynchronous%20System.jpg)
 
 The schematic view or design of the model contains (say) Participant 3 is sending a message to the coordinator and that message will then be received by other members or participants connected to the coordinator. Similarly, other participants of the model can also send message via the coordinator.  
